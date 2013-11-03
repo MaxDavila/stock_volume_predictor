@@ -1,5 +1,3 @@
-stock_volume_predictor
-======================
 This program attempts to predict the change in volume traded for AAPL using Numenta's [online prediction
 framework](https://github.com/numenta/nupic/wiki/Online-Prediction-Framework)
 
