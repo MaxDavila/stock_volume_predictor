@@ -41,8 +41,6 @@ def runHotgym():
     for i, record in enumerate(reader, start=1):
       modelInput = dict(zip(headers, record))
       modelInput["Volume"] = float(modelInput["Volume"])
-      # modelInput["timestamp"] = datetime.datetime.strptime(
-      #     modelInput["timestamp"], "%m/%d/%y %H:%M")
       result = model.run(modelInput)
       result.metrics = metricsManager.update(result)
       isLast = i == _NUM_RECORDS
